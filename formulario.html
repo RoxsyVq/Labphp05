@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3>Paso de Variables de Formularios</h3>
+    <form method="post" action="mis_datos.php">
+      <p>
+        Tu nombre<br>
+        <input type="text" name="nombre" size="30" value="Angel">
+      <br>
+      <input name="apellidos" type="text" id="apellidos" value="Gonzales Cave" size="40">
+      <br>
+      <input type="hidden" name="edad" value="25">
+      <br>
+      Tu sistema favorito:
+      <select size="1" name="sistema">
+        <option value="Linux">Linux</option>
+        <option value="Unix">Unix</option>
+        <option value="Macintosh">Macintosh</option>
+        <option selected value="Windows">Windows</option>
+      </select>
+      <br>
+      ¿Te gusta el futbol?<br>
+      <input type="checkbox" name="futbol" value="Off"><br>
+
+      Cual es tu sexo?<br>
+      Hombre<input type="radio" value="hombre" checked name="sexo">
+      Mujer<input type="radio" name="sexo" value="mujer"><br>
+      Aficcciones:
+      <br>
+      <textarea rows="5" name="Aficcciones" cols="28"></textarea>
+      <br>
+      <input type="submit" value="Enviar datos" name="enviar">
+      <input type="reset" value="Restablecer" name="B2">
+    </form>
+
+  </body>
+</html>
